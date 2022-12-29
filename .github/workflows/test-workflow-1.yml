@@ -11,4 +11,12 @@ jobs:
     needs: job-1
     steps:
       - name: Print goodbye
-        run: echo "Good Bye!"
+        run: echo "Good Bye All!"
+  job-3:
+    runs-on: ubuntu-latest
+    needs: job-1
+    steps:
+      - name: Print goodbye
+        run: |
+            echo "Good Bye Abhishek!"
+            echo "Good Bye Durga" 
